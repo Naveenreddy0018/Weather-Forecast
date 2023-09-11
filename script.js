@@ -4,7 +4,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const city = document.getElementById("city-name");
 const search = document.getElementById("search-btn");
 
-const condition = document.querySelector(".weather-icon"); // Changed to match the updated HTML structure
+const condition = document.querySelector(".weather-icon"); 
 
 let weatherInfo = () => {
     fetch(apiUrl + city.value + `&appid=${apiKey}`)
@@ -46,15 +46,15 @@ let weatherInfo = () => {
             document.querySelector(".wind").innerHTML = item.wind.speed + " km/h";
 
             if (item.weather[0].main == 'Clouds') {
-                condition.innerHTML = "Cloudy"; // Set text or icons here
+                condition.innerHTML = "Cloudy"; 
             } else if (item.weather[0].main == 'Clear') {
-                condition.innerHTML = "Clear"; // Set text or icons here
+                condition.innerHTML = "Clear"; 
             } else if (item.weather[0].main == 'Rain') {
-                condition.innerHTML = "Rainy"; // Set text or icons here
+                condition.innerHTML = "Rainy"; 
             } else if (item.weather[0].main == 'Drizzle') {
-                condition.innerHTML = "Drizzle"; // Set text or icons here
+                condition.innerHTML = "Drizzle"; 
             } else if (item.weather[0].main == 'Mist') {
-                condition.innerHTML = "Misty"; // Set text or icons here
+                condition.innerHTML = "Misty"; 
             }
             document.querySelector(".weather").style.display = "block";
             document.getElementById("cond").innerHTML = ": " + item.weather[0].main;
