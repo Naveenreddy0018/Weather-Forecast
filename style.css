@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include this to ensure proper box sizing */
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Change to min-height for better responsiveness */
+    background-color: #f0f0f0;
+}
+
+.weather-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    width: 100%; /* Make sure it spans the entire width */
+}
+
+.weather-data {
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add some space between search and weather data */
+}
+
+#city-name {
+    padding: 13px;
+    flex: 1; /* Let the input expand to fill the available space */
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: 0;
+}
+
+#search-btn {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #007BFF; /* Add a background color */
+    color: #fff; /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn:active {
+    opacity: 0.8; /* Slightly reduce opacity on click */
+}
+
+.search-img {
+    width: 20px; /* Adjust the size of the search icon */
+}
+
+.weather-icon {
+    width: 100px; /* Adjust the size of the weather icon */
+    margin-top: 20px; /* Increase margin for spacing */
+}
+
+.temp {
+    margin-bottom: 10px;
+    font-size: 40px; /* Slightly reduce font size */
+}
+
+.situation-img,
+.wind-img {
+    width: 30px; /* Adjust the size of humidity and wind icons */
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack icon and text vertically */
+}
+
+.parameters-text {
+    margin-top: 5px; /* Adjust the top margin of parameters text */
+}
+
+.humidity,
+.wind {
+    font-size: 14px; /* Adjust font size for humidity and wind */
+    font-weight: bold;
+}
+
+.weather {
+    display: none;
+}
+
+.condition,
+.sunrise,
+.sunset {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.info {
+    margin-top: 12px;
+}
